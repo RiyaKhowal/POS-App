@@ -1,0 +1,26 @@
+const billModel = require("./../models/billModel");
+
+const addbillController = async (req,res) =>{
+    
+     try{
+       const newbill= new billModel(req.body);
+       await newbill.save();
+       res.send("bill generated");
+     }catch(error){
+   res.send(error);
+   console.log(error);
+     }
+};
+
+const getBillsController = async (req,res) => {
+ try{
+   const bills =  await billModel.find();
+   res.send(bills);
+ }catch(error){
+  res.send(error);
+  console.log(error);
+    }
+}
+
+ module.exports = { addbillController,getBillsController};
+ 

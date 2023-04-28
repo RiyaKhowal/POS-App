@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+body{
+    font-family: 'Sora', sans-serif;
+}
+
+.category{
+    display: flex;
+
+}
+.itemCategory{
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    display: flex;
+}
+
+.itemCategory-active{
+   border: 2px solid green;
+   background-color: beige;
+}
+
+
+.register{
+    margin-left: 300px;
+    margin-top: 100px;
+    width: 600px;
+    height: 430px;
+   
+    border: 2px solid;
+    padding: 15px;
+    background-color: rgba(98, 197, 251, 0.463);
+}
+.register-form{
+    background-color: rgba(98, 197, 251, 0.463);
+    box-shadow:   rgba(50, 50, 93, 0.25) 0px 50px 100 -20px ,
+    rgb(0, 0, 0.3) 0px 30px 60px -30px,
+     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.register-form h1{
+    text-align: center;
+    margin-top: 5px;
+    border: 1px solid;
+    background-color: rgb(2,2,75);
+    color: white;
+}
+
+.register-form h2{
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+
+}
+.register-form input{
+    width: 500px;
+    height: 30px;
+    margin-left: 15px;
+}
+.register-form form.item{
+    margin-left: 30px;
+}
+.register-form h3{
+    color: rgb(4, 4, 113);
+    text-align: center;
+}
+
+.register-form button{
+    align-items: flex-end;
+    margin-left: 450px;
+    margin-bottom: 15px;
+}
+
+@media screen  and (max-width : 784px){
+    
+
+    .css-dev-only-do-not-override-1e3x2xa{
+        flex-flow: column wrap;
+    }
+
+   .ant-table-content{
+    table-layout: auto;
+    width: 5%;
+   }
+
+   .ant-spin-container {
+    width:10%;
+   }
+
+   .tableT{
+    width: 50%;
+    margin-left: 102px;
+   }
+
+}
+
+@media screen  and (min-width : 992px){
+   /* .ant-card.ant-card-bordered.ant-card-hoverable{
+        width:230px;
+        margin-bottom: 20px;
+         padding: 25px;
+        margin-right: 120px;
+    }
+       .ant-col .ant-card
+    */
+    .ant-col.ant-col-xs-24{
+        width:230px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+}
+
